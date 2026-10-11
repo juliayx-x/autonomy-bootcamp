@@ -17,7 +17,9 @@ indexes look different. Fill values, gradients, and
 """
 
 import time
+
 import numpy as np
+
 from .abstract_camera import AbstractCamera
 from .frame import CameraFrame
 
@@ -71,3 +73,4 @@ class SimCamera(AbstractCamera):
         return rng.integers(
             0, 256, size=(self._height, self._width, 3), dtype=np.uint8
         )
+    
